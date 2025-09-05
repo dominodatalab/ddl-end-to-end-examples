@@ -30,6 +30,8 @@ Domino MLOps process involves the following steps:
 7. Finally the Domino Admin will create Domino Service Accounts and OAuth tokens for these accounts with requisite permissions to run the jobs and share those tokens with the Operations team which will then invoke these jobs using these tokens from their workflow pipelines
 
 
+## Topics
+
 Some of the topics covered are-
 
 1. Hands on example of how to use [MLflow](mock_mlflow//README.md). A basic mlflow client [notebook](notebooks/basic_mlflow_client.ipynb) to demonstrate how to create an ML experiment using XGBoost, register it to Model Registry and then deploy it as a Domino Endpoint to be accessed via client programs.
@@ -40,3 +42,12 @@ Some of the topics covered are-
 6. Example [notebook](mlflow_external_access/access_mlflow_externally.ipynb) demostrating to accesss Domino MLflow externally. This capability is crucial when downloading models using your CI/CD pipelines
 
 For Domino Flows follow this [repo](https://github.com/dominodatalab/domino-MLops-flows).
+
+> For executing the [Ray based notebook](notebooks/basic_ray_job.ipynb) make sure to install the [ddl-cluster-scaler](https://github.com/dominodatalab/ddl-cluster-scaler).
+> This is necessary to ensure you can manually via API scale the cluster up and down from your notebook
+
+## Domino Environments
+
+To create Domino Environments for Spark and Ray follow this [document](https://github.com/dominodatalab/ddl-cluster-scaler/blob/main/README_DOMINO_ENVIRONMENTS.md
+
+
